@@ -1,0 +1,128 @@
+
+Based on the image and your answers to the questions above, please design a method to build a house like that.
+
+Now you are a helpful assistant that writes Mineflayer javascript code to complete any Minecraft task specified by me.
+
+Here are some useful programs written with Mineflayer APIs:
+
+await bot.pathfinder.goto(goal); // A very useful function. This function may change your main-hand equipment.
+// Following are some Goals you can use:
+new GoalNear(x, y, z, range); // Move the bot to a block within the specified range of the specified block. `x`, `y`, `z`, and `range` are `number`
+new GoalXZ(x, z); // Useful for long-range goals that don't have a specific Y level. `x` and `z` are `number`
+new GoalGetToBlock(x, y, z); // Not get into the block, but get directly adjacent to it. Useful for fishing, farming, filling bucket, and beds. `x`, `y`, and `z` are `number`
+new GoalFollow(entity, range); // Follow the specified entity within the specified range. `entity` is `Entity`, `range` is `number`
+new GoalPlaceBlock(position, bot.world, {}); // Position the bot in order to place a block. `position` is `Vec3`
+new GoalLookAtBlock(position, bot.world, {}); // Path into a position where a blockface of the block at position is visible. `position` is `Vec3`
+
+// These are other Mineflayer functions you can use:
+bot.isABed(bedBlock); // Return true if `bedBlock` is a bed
+bot.blockAt(position); // Return the block at `position`. `position` is `Vec3`
+
+// These are other Mineflayer async functions you can use:
+await bot.equip(item, destination); // Equip the item in the specified destination. `item` is `Item`, `destination` can only be "hand", "head", "torso", "legs", "feet", "off-hand"
+await bot.consume(); // Consume the item in the bot's hand. You must equip the item to consume first. Useful for eating food, drinking potions, etc.
+await bot.fish(); // Let bot fish. Before calling this function, you must first get to a water block and then equip a fishing rod. The bot will automatically stop fishing when it catches a fish
+await bot.sleep(bedBlock); // Sleep until sunrise. You must get to a bed block first
+await bot.activateBlock(block); // This is the same as right-clicking a block in the game. Useful for buttons, doors, etc. You must get to the block first
+await bot.lookAt(position); // Look at the specified position. You must go near the position before you look at it. To fill bucket with water, you must lookAt first. `position` is `Vec3`
+await bot.activateItem(); // This is the same as right-clicking to use the item in the bot's hand. Useful for using buckets, etc. You must equip the item to activate first
+await bot.useOn(entity); // This is the same as right-clicking an entity in the game. Useful for shearing sheep, equipping harnesses, etc. You must get to the entity first
+
+
+
+At each round of conversation, I will give you
+Nearby blocks: ...
+Position: ...
+Task: ...
+Context: ...
+
+
+You should then respond to me with
+Explain (if applicable): Are there any steps missing in your plan? Why does the code not complete the task? What does the chat log and execution error imply?
+Plan: How to complete the task step by step. You should pay attention to Inventory since it tells what you have. The task completeness check is also based on your final inventory.
+Code:
+    1) Write an async function taking the bot as the only argument.
+    2) Reuse the above useful programs as much as possible.
+        - Use `mineBlock(bot, name, count)` to collect blocks. Do not use `bot.dig` directly.
+        - Use `craftItem(bot, name, count)` to craft items. Do not use `bot.craft` or `bot.recipesFor` directly.
+        - Use `smeltItem(bot, name count)` to smelt items. Do not use `bot.openFurnace` directly.
+        - Use `placeItem(bot, name, position)` to place blocks. Do not use `bot.placeBlock` directly.
+        - Use `killMob(bot, name, timeout)` to kill mobs. Do not use `bot.attack` directly.
+    3) Your function will be reused for building more complex functions. Therefore, you should make it generic and reusable. You should not make strong assumption about the inventory (as it may be changed at a later time), and therefore you should always check whether you have the required items before using them. If not, you should first collect the required items and reuse the above useful programs.
+    4) Anything defined outside a function will be ignored, define all your variables inside your functions.
+    5) Call `bot.chat` to show the intermediate progress.
+    6) Do not write infinite loops or recursive functions.
+    7) Do not use `bot.on` or `bot.once` to register event listeners. You definitely do not need them.
+    8) Name your function in a meaningful way (can infer the task from the name).
+
+You should only respond in the format as described below:
+RESPONSE FORMAT:
+Explain: ...
+Plan:
+1) ...
+2) ...
+3) ...
+...
+Code:
+```javascript
+// helper functions (only if needed, try to avoid them)
+...
+// main function after the helper functions
+async function yourMainFunctionName(bot) {
+  // ...
+}
+```
+
+Now I will give you information:
+
+Nearby blocks: dirt, grass_block
+
+Position: x=16.5, y=-60.0, z=-127.5
+
+Task: build a house
+
+Context: Build a house according to the figure. Your building should be similar to the one in the image.
+
+
+Here is an example of java script code:
+Code Example:
+```javascript
+// helper function to build a house
+async function buildHouse(bot, position, size, blockName) {
+    for (let y = 0; y < size; y++) {
+        for (let x = 0; x < size; x++) {
+            for (let z = 0; z < size; z++) {
+                const targetPosition = position.offset(x, y, z);
+                await placeItem(bot, blockName, targetPosition);
+            }
+        }
+    }
+    bot.chat("House built.");
+}
+
+// main function
+async function buildWoodenHouse(bot) {
+    const position = bot.entity.position.offset(1, 0, 1); // offset to avoid building at the bot's position
+    const size = 5; // size of the house
+    const blockName = 'oak_planks'; // material to build the house
+    await buildHouse(bot, position, size, blockName);
+}
+```
+
+Please note that:
+1) You should not use only one for-loop. Different walls should be built by different for-loops.
+2) Never check whether you have enough blocks in inventory. I will garantee that you will be given enough blocks.
+3) Always use ```const position = bot.entity.position.offset(1, 0, 1); // offset to avoid building at the bot's position```.
+4) Never define ```placeItem(bot, blockName, targetPosition)``` by yourself. We already provide a defined function.
+5) Always use ```const targetPosition = position.offset(...)``` before ```placeItem(bot, blockName, targetPosition)```.
+4) Additionally, y axis always start from 0 rather than 1 in a for-loop.
+5) In terms of the size of the house, the kind of blocks of your selection and other details, please refer to the image and your answers to those questions above.
+
+Here are the names of the commonly used blocks that you can choose from:
+["ice", "packed_ice", "blue_ice", "beacon", "white_concrete", "quartz_block", "smooth_sandstone", "sandstone", "sandstone_slab", "sandstone_stairs", "oak_door", "polished_andesite", "glass", "glass_pane", "lantern", "sea_lantern", "glowstone", "blue_glazed_terracotta", "white_glazed_terracotta", "green_glazed_terracotta", "yellow_glazed_terracotta", "red_glazed_terracotta", "lime_glazed_terracotta", "cyan_glazed_terracotta"]
+You should not misspell them in your code.
+
+One last important thing: you should write your code within maximum length of tokens.
+
+
+
