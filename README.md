@@ -10,7 +10,7 @@ We propose **Creative Agents**, the first framework that can handle creative tas
 ### Install Packages and Environments
 
 #### Install MineDojo
-</font> <font color=Red> TODO: Install MineDojo </font> <font color=Black>
+You can install the MineDojo environment following the [official document](https://docs.minedojo.org/sections/getting_started/install.html#prerequisites). 
 
 #### Install Voyager
 Please follow [Voyager Install Tutorial](https://github.com/MineDojo/Voyager). Note that you should accomplish all the four parts:
@@ -43,3 +43,17 @@ python diffusion_gpt4.py --api_key <API_KEY> --image_path <IMAGE_PATH> --mc_port
 
 To test with Diffusion+BC, run:
 </font> <font color=Red> TODO: how to run Diffusion+BC </font> <font color=Black>
+
+## Showcases and Demonstrations
+
+|<img src="figs/demo_4.gif" width="245" a="demo_4"/>|<img src="figs/demo_6.gif" width="245" a="demo_6"/>|
+|:--:|:--:|
+|<img src="figs/demo_7.gif" width="245" a="demo_7"/>|<img src="figs/demo_8.gif" width="245" a="demo_8"/>|
+
+
+## Citation
+If you find our benchmark meaningful and useful, please consider citing us!
+```bibtex
+@article{
+}
+```
