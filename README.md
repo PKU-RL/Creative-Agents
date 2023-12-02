@@ -35,6 +35,8 @@ git clone https://github.com/PKU-RL/Creative-Agents
 ```
 
 Before running with CoT+GPT-4 or Diffusion+GPT-4V, please make sure you have an OpenAI API Key that can access to GPT-4 and GPT-4V(ision).
+In our experiments, we use Minecraft Official Launcher instead of Microsoft Azure, following this [link](https://github.com/MineDojo/Voyager/blob/main/installation/minecraft_instance_install.md#option-2-minecraft-official-launcher).
+
 To test with CoT+GPT-4, run:
 ```
 python cot_gpt4.py --api_key <API_KEY> --task <TASK_DESCRIPTION> --mc_port <LAN_PORT>
@@ -46,16 +48,17 @@ python diffusion_gpt4.py --api_key <API_KEY> --image_path <IMAGE_PATH> --mc_port
 ```
 
 To test with Diffusion+BC, run:
+
 </font> <font color=Red> TODO: how to run Diffusion+BC </font> <font color=Black>
 
 ## Showcases and Demonstrations
 
 
-| Build according to a desert-style house with sandstones | Build according to a fantastic house with iron_block, gold_block, and glass |
-|:-------------------------------------------------------:|:---------------------------------------------------------------------------:|
-|   <img src="figs/demo_4.gif" width="366" a="demo_4"/>   |             <img src="figs/demo_6.gif" width="366" a="demo_6"/>             |
-|       **Build a wooden house made of oak_planks**       |      **Build a modern house with quartz_blocks and polished_andesite**      |
-|   <img src="figs/demo_7.gif" width="366" a="demo_7"/>   |             <img src="figs/demo_8.gif" width="366" a="demo_8"/>             |
+| Build according to an image showing a desert-style house with sandstones | Build according to an image showing a fantastic house with iron_block, gold_block, and glass |
+|:------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------:|
+|           <img src="figs/demo_4.gif" width="366" a="demo_4"/>            |                     <img src="figs/demo_6.gif" width="366" a="demo_6"/>                      |
+|               **Build a wooden house made of oak_planks**                |              **Build a modern house with quartz_blocks and polished_andesite**               |
+|           <img src="figs/demo_7.gif" width="366" a="demo_7"/>            |                     <img src="figs/demo_8.gif" width="366" a="demo_8"/>                      |
 
 
 ## Citation
