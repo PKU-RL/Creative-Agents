@@ -53,6 +53,7 @@ To test with Diffusion+BC, run:
 
 ## Showcases and Demonstrations
 
+![](figs/showcase.png)
 
 | Build according to an image showing a desert-style house with sandstones | Build according to an image showing a fantastic house with iron_block, gold_block, and glass |
 |:------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------:|
