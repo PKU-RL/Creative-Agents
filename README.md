@@ -1,5 +1,11 @@
 # Creative Agents: Empowering Agents with Imagination for Creative Tasks
 
+<div align="center">
+
+[[Website]](https://sites.google.com/view/creative-agents) 
+[[arXiv]](https://arxiv.org/abs/2312.02519)
+
+</div>
 
 We propose **Creative Agents**, the first framework that can handle creative tasks in an open-ended world. Using this framework, we implement various embodied agents through different combinations of imaginators and controllers. **Creative Agents** is an initial attempt in this field, aimed at raising the awareness of building intelligent agents with creativity.
 
@@ -57,6 +63,7 @@ To test with Diffusion+BC, run:
 
 ![](figs/showcase.png)
 
+
 | Build according to an image showing a desert-style house with sandstones | Build according to an image showing a fantastic house with iron_block, gold_block, and glass |
 |:------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------:|
 |           <img src="figs/demo_4.gif" width="366" a="demo_4"/>            |                     <img src="figs/demo_6.gif" width="366" a="demo_6"/>                      |
@@ -67,8 +74,8 @@ To test with Diffusion+BC, run:
 ## Citation
 If you find our benchmark meaningful and useful, please consider citing us!
 ```bibtex
-@article{
-  title={Creative Agents: Empowering Agents with Imagination for Creative Tasks},
+@article{zhang2023creative
+      title={Creative Agents: Empowering Agents with Imagination for Creative Tasks},
       author={Zhang, Chi and Cai, Penglin and Fu, Yuhui and Yuan, Haoqi and Lu, Zongqing},
       journal={arXiv preprint arXiv:2312.02519},
       year={2023}
