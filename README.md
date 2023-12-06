@@ -64,7 +64,7 @@ To test with Diffusion+BC, run:
 ![](figs/showcase.png)
 
 
-|(Diffusion+GPT-4V) A screenshot of a white pyrmaid-like house in Minecraft with windows, which is built of snow | (Diffusion+GPT-4V) A sandstone palace in Minecraft with intricate details and towering minarets |
+|(Diffusion+GPT-4V) A screenshot of a white pyramid-like house in Minecraft with windows, which is built of snow | (Diffusion+GPT-4V) A sandstone palace in Minecraft with intricate details and towering minarets |
 |:-------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------:|
 |        <img src="figs/demo_5.gif" width="366" a="demo_5"/>                            |                      <img src="figs/demo_9.gif" width="366" a="demo_9"/>                         |
 |   **(CoT+GPT-4) Build a house made of iron_block and yellow_stained_glass**           |               **(CoT+GPT-4) Build a modern house with quartz_blocks and glass**                  |
