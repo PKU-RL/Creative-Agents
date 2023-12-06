@@ -7,6 +7,8 @@ We propose **Creative Agents**, the first framework that can handle creative tas
 
 ## Installation
 
+We release our models, code, and dataset at [https://zenodo.org/records/10251970](https://zenodo.org/records/10251970) and [https://doi.org/10.5281/zenodo.10275049](https://doi.org/10.5281/zenodo.10275049).
+
 ### Basic Requirements
 
 MineDojo works with ```Ubuntu>=18.04```, ```Python>=3.9``` and ```Java jdk 1.8.0_171```, while Voyager works with both ```Ubuntu>=20.04``` and ```Windows```, with ```Java 17``` installed. On ```Windows 10```, installing a virtual environment with ```Python>=3.10``` is recommended.
