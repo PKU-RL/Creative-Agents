@@ -64,11 +64,11 @@ To test with Diffusion+BC, run:
 ![](figs/showcase.png)
 
 
-| Build according to an image showing a desert-style house with sandstones | Build according to an image showing a fantastic house with iron_block, gold_block, and glass |
+|   Build according to an image showing a modern house with quartz_block   | Build according to an image showing a fantastic house with iron_block, gold_block, and glass |
 |:------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------:|
-|           <img src="figs/demo_4.gif" width="366" a="demo_4"/>            |                     <img src="figs/demo_6.gif" width="366" a="demo_6"/>                      |
-|               **Build a wooden house made of oak_planks**                |              **Build a modern house with quartz_blocks and polished_andesite**               |
-|           <img src="figs/demo_7.gif" width="366" a="demo_7"/>            |                     <img src="figs/demo_8.gif" width="366" a="demo_8"/>                      |
+|           <img src="figs/demo_3.gif" width="366" a="demo_3"/>            |                     <img src="figs/demo_6.gif" width="366" a="demo_6"/>                      |
+|            **Build a house made of iron_block in a meadow**              |          **Build a modern house with quartz_blocks and red_terracotta in a desert**          |
+|           <img src="figs/demo_1.gif" width="366" a="demo_1"/>            |                     <img src="figs/demo_2.gif" width="366" a="demo_2"/>                      |
 
 
 ## Citation
