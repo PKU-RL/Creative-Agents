@@ -64,10 +64,10 @@ To test with Diffusion+BC, run:
 ![](figs/showcase.png)
 
 
-|Build according to an image showing a modern house with quartz_block and white_concrete|Build according to an image showing a fantastic house with quartz_block and sandstone             |
+|Build according to an image showing a screenshot of a white pyrmaid-like house in Minecraft with windows, which is built of snow | Build according to an image showing a sandstone palace in Minecraft with intricate details and towering minarets |
 |:-------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------:|
 |        <img src="figs/demo_5.gif" width="366" a="demo_5"/>                            |                      <img src="figs/demo_9.gif" width="366" a="demo_9"/>                         |
-|         **Build a house made of iron_block in a meadow**                              |           **Build a modern house with quartz_blocks and red_terracotta in a desert**             |
+|         **Build a house made of iron_block and yellow_stained_glass**                 |                     **Build a modern house with quartz_blocks and glass**                        |
 |        <img src="figs/demo_1.gif" width="366" a="demo_1"/>                            |                      <img src="figs/demo_2.gif" width="366" a="demo_2"/>                         |
 
 
