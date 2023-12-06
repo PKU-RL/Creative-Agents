@@ -68,5 +68,9 @@ To test with Diffusion+BC, run:
 If you find our benchmark meaningful and useful, please consider citing us!
 ```bibtex
 @article{
+  title={Creative Agents: Empowering Agents with Imagination for Creative Tasks},
+      author={Zhang, Chi and Cai, Penglin and Fu, Yuhui and Yuan, Haoqi and Lu, Zongqing},
+      journal={arXiv preprint arXiv:2312.02519},
+      year={2023}
 }
 ```
