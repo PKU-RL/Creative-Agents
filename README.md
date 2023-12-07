@@ -13,9 +13,8 @@ We propose **Creative Agents**, the first framework that can handle creative tas
 
 ## Installation
 
-Our models, code, and dataset have been released. You can find them at:
+Our models and dataset have been released. You can find them at:
 - [https://doi.org/10.5281/zenodo.10277346](https://doi.org/10.5281/zenodo.10277346) (models)
-- [https://zenodo.org/records/10251970](https://zenodo.org/records/10251970) (code)
 - [https://doi.org/10.5281/zenodo.10275049](https://doi.org/10.5281/zenodo.10275049) (dataset)
 
 ### Basic Requirements
