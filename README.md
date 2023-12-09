@@ -34,17 +34,26 @@ Please follow [Voyager Install Tutorial](https://github.com/MineDojo/Voyager). N
 - [Fabric Mods Install](https://github.com/MineDojo/Voyager#fabric-mods-install)
 
 
-#### Install Dependencies for BC Controller
-
-```bash
-pip install -r ./BC_Controller/requirements.txt
-```
-
 ### Get Started
 
 ```
 git clone https://github.com/PKU-RL/Creative-Agents
 ```
+
+
+#### Install Dependencies and Download Models, Datasets(for training) for BC Controller
+
+To install packages for BC Controller, run:
+```bash
+pip install -r ./BC_Controller/requirements.txt
+```
+
+After downloading our models and datasets, for spilted files, run:
+```bash
+cat NAME.zip.* > NAME.zip
+```
+Then unzip them, and move models to ```./BC_Controller/models```, move datasets to ```./BC_Controller/datasets```
+
 
 Before running with CoT+GPT-4 or Diffusion+GPT-4V, please make sure you have an OpenAI API Key that can access to GPT-4 and GPT-4V(ision).
 In our experiments, we use Minecraft Official Launcher instead of Microsoft Azure, following this [link](https://github.com/MineDojo/Voyager/blob/main/installation/minecraft_instance_install.md#option-2-minecraft-official-launcher).
