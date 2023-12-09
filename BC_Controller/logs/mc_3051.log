@@ -1,0 +1,1277 @@
+[16:33:45] [EnvServerSocketHandler/INFO]: [STDOUT]: Received from localhost:<MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0">
+    <Mission xmlns="http://ProjectMalmo.microsoft.com">
+        <About>
+            <Summary>MineDojoSim</Summary>
+        </About>
+
+        <ModSettings>
+            <MsPerTick>50</MsPerTick>
+        </ModSettings>
+
+        <ServerSection>
+            <ServerInitialConditions>
+                <!-- Initial Conditions -->
+
+                
+                <Time>
+                   
+                   <AllowPassageOfTime>false</AllowPassageOfTime>
+                </Time>
+
+                
+                <AllowSpawning>false</AllowSpawning>
+
+                
+
+            </ServerInitialConditions>
+            <ServerHandlers>
+
+                
+                <FlatWorldGenerator forceReset="true" generatorString=""/>
+
+                
+
+                
+
+                
+
+
+            </ServerHandlers>
+        </ServerSection>
+
+
+        
+        <AgentSection mode="Survival">
+            <Name>MineDojoAgent0</Name>
+
+            <AgentStart>
+
+                
+                <LowLevelInputs>true</LowLevelInputs>
+
+                
+                <BreakSpeedMultiplier>1.0</BreakSpeedMultiplier>
+
+                
+                <StartingHealth maxHealth="20" health="20.0"/>
+
+                
+                <StartingFood food="20"/>
+
+                
+
+            </AgentStart>
+            <AgentHandlers>
+                <!-- These area  bit of boilerplate that
+                 we always expect to be included ... -->
+                <FileBasedPerformanceProducer/>
+                <ObservationFromDamage/>
+                <PauseCommand/>
+
+                <!--  Observations     -->
+
+                
+                <VideoProducer want_depth="false">
+                <Width>512 </Width>
+                <Height>288</Height>
+            </VideoProducer>
+
+                
+                <ObservationFromFullInventory flat="false"/>
+
+                
+                <ObservationFromFullStats/>
+
+                
+
+                <!--  Monitors     -->
+
+                <!--  Actions   -->
+                <ChatCommands/>
+
+                
+                <CameraCommands/>
+
+                
+                <NearbySmeltCommands/>
+
+                
+                <SimpleCraftCommands/>
+
+                
+                <NearbyCraftCommands/>
+
+                
+                <HumanLevelCommands/>
+
+                
+                <EquipCommands/>
+
+                
+                <PlaceCommands/>
+
+                
+
+                <!--  Rewards   -->
+
+                <!-- Additional Agent Handlers like quitting -->
+                
+
+                <!-- Env Monitors? -->
+            </AgentHandlers>
+        </AgentSection>
+        
+    </Mission>
+    <ExperimentUID>
+        b0fad27f-6d5c-4a85-83cf-2c66163c962b
+    </ExperimentUID>
+    <ClientRole>
+        0
+    </ClientRole>
+    <ClientAgentConnection>
+        <ClientIPAddress>127.0.0.1</ClientIPAddress>
+        <ClientMissionControlPort>0</ClientMissionControlPort>
+        <ClientCommandsPort>0</ClientCommandsPort>
+        <AgentIPAddress>127.0.0.1</AgentIPAddress>
+        <AgentMissionControlPort>0</AgentMissionControlPort>
+        <AgentVideoPort>0</AgentVideoPort>
+        <AgentDepthPort>0</AgentDepthPort>
+        <AgentLuminancePort>0</AgentLuminancePort>
+        <AgentObservationsPort>0</AgentObservationsPort>
+        <AgentRewardsPort>0</AgentRewardsPort>
+        <AgentColourMapPort>0</AgentColourMapPort>
+    </ClientAgentConnection>
+</MissionInit>
+[16:33:46] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[16:33:47] [EnvServerSocketHandler/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
+[16:33:47] [Client thread/INFO]: [STDOUT]: Mission received: MineDojoSim
+[16:33:47] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_HANDLERS
+[16:33:47] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_HANDLERS
+[16:33:47] [Client thread/INFO]: [STDOUT]: Starting command server.
+[16:33:47] [Thread-11/INFO]: [STDOUT]: INFO: ->com(0) Listening for messages on port 10683
+[16:33:47] [Client thread/INFO]: [STDOUT]: CLIENT request state: EVALUATING_WORLD_REQUIREMENTS
+[16:33:47] [Client thread/INFO]: [STDOUT]: CLIENT enter state: EVALUATING_WORLD_REQUIREMENTS
+[16:33:47] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_NEW_WORLD
+[16:33:47] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_NEW_WORLD
+[16:33:49] [Client thread/INFO]: Mixing MixinWorldProviderSpawn from mixins.overclocking.malmomod.json into net.minecraft.world.WorldProvider
+[16:33:49] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[16:33:49] [Server thread/INFO]: Generating keypair
+[16:33:49] [Server thread/INFO]: Injecting existing block and item data into this server instance
+[16:33:49] [Server thread/INFO]: Applying holder lookups
+[16:33:49] [Server thread/INFO]: Holder lookups applied
+[16:33:50] [Server thread/INFO]: Loading dimension 0 (TEMP_0_49498eb5-9afb-4406-9b09-4aefbeede834) (net.minecraft.server.integrated.IntegratedServer@27a61c4d)
+[16:33:51] [Server thread/INFO]: Loading dimension 1 (TEMP_0_49498eb5-9afb-4406-9b09-4aefbeede834) (net.minecraft.server.integrated.IntegratedServer@27a61c4d)
+[16:33:51] [Server thread/INFO]: Loading dimension -1 (TEMP_0_49498eb5-9afb-4406-9b09-4aefbeede834) (net.minecraft.server.integrated.IntegratedServer@27a61c4d)
+[16:33:51] [Server thread/INFO]: Preparing start region for level 0
+[16:33:51] [Server thread/INFO]: Changing view distance to 4, from 10
+[16:33:52] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_MOD_READY
+[16:33:52] [Server thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_READY
+[16:33:52] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_READY
+[16:33:52] [Netty Local Client IO #0/INFO]: [STDOUT]: Transformed Name: net.minecraft.client.entity.EntityOtherPlayerMP
+[16:33:52] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Found EntityOtherPlayerMP, attempting to transform it
+[16:33:52] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_MOD_READY
+[16:33:52] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
+[16:33:52] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
+[16:33:52] [Server thread/INFO]: [STDOUT]: INCOMING MISSION: Received MissionInit directly through ServerStateMachine constructor.
+[16:33:52] [Server thread/INFO]: [STDOUT]: Mission received: MineDojoSim
+[16:33:52] [Server thread/INFO]: Received mission: §9MineDojoSim
+[16:33:52] [Server thread/INFO]: Source: §alocalhost
+[16:33:52] [Server thread/INFO]: [STDOUT]: SERVER request state: BUILDING_WORLD
+[16:33:52] [Server thread/INFO]: [STDOUT]: SERVER enter state: BUILDING_WORLD
+[16:33:52] [Netty Local Client IO #0/INFO]: Server protocol version 2
+[16:33:52] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[16:33:52] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[16:33:52] [Netty Server IO #1/INFO]: Client protocol version 2
+[16:33:52] [Server thread/INFO]: [STDOUT]: Experiment requires: 
+[16:33:52] [Server thread/INFO]: [STDOUT]: >>>> MineDojoAgent0
+[16:33:52] [Netty Server IO #1/INFO]: Client attempting to join with 5 mods : minecraft@1.11.2,FML@8.0.99.99,malmomod@0.37.0,forge@13.20.1.2588,mcp@9.19
+[16:33:52] [Netty Local Client IO #0/INFO]: [Netty Local Client IO #0] Client side modded connection established
+[16:33:52] [Server thread/INFO]: [Server thread] Server side modded connection established
+[16:33:52] [Server thread/INFO]: MineDojoAgent0[local:E:6b1d9e13] logged in with entity id 0 at (881.5, 4.0, -924.5)
+[16:33:52] [Server thread/INFO]: MineDojoAgent0 joined the game
+[16:33:54] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - MineDojoAgent0
+[16:33:54] [Server thread/INFO]: [STDOUT]: Initializing player with username MineDojoAgent0 and agentname MineDojoAgent0
+[16:33:55] [Client thread/INFO]: Mixing MixinRandomSkinTexture from mixins.overclocking.malmomod.json into net.minecraft.client.resources.DefaultPlayerSkin
+[16:33:55] [Client thread/INFO]: [STDOUT]: CLIENT request state: RUNNING
+[16:33:55] [Client thread/INFO]: [STDOUT]: CLIENT enter state: RUNNING
+[16:33:55] [Server thread/INFO]: [STDOUT]: SERVER request state: RUNNING
+[16:33:55] [Server thread/INFO]: [STDOUT]: SERVER enter state: RUNNING
+[16:33:55] [Client thread/INFO]: [STDOUT]: [LOGTOPY] On Mac OSX Catalina make sure to install this OpenJDK 1.8.0_152-release-1056-b12, this prevents the NSDragRegions crash
+[16:33:55] [Client thread/INFO]: [STDOUT]: Resized the window
+[16:33:55] [Client thread/INFO]: [STDOUT]: Unpausing
+[16:33:55] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:56] [Client thread/INFO]: [CHAT] Block placed
+[16:33:56] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:56] [Client thread/INFO]: [CHAT] Block placed
+[16:33:56] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[16:33:56] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:56] [Client thread/INFO]: [CHAT] Block placed
+[16:33:56] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:33:56] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:33:56] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:56] [Client thread/INFO]: [CHAT] Block placed
+[16:33:56] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:56] [Client thread/INFO]: [CHAT] Block placed
+[16:33:56] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:56] [Client thread/INFO]: [CHAT] Block placed
+[16:33:56] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:56] [Client thread/INFO]: [CHAT] Block placed
+[16:33:56] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:56] [Client thread/INFO]: [CHAT] Block placed
+[16:33:56] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:56] [Client thread/INFO]: [CHAT] Block placed
+[16:33:56] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:56] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:57] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:57] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:58] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:58] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:59] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:59] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:59] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:59] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:59] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:33:59] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete_powder
+[16:33:59] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:59] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:33:59] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:33:59] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:33:59] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:59] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:59] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:59] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:33:59] [Client thread/INFO]: [CHAT] Block placed
+[16:33:59] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:pink_glazed_terracotta
+[16:33:59] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:00] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:00] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:00] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:00] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:01] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:01] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:01] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:01] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:02] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:02] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:02] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:02] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:03] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete_powder
+[16:34:03] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:03] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:03] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete_powder
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:04] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:04] [Client thread/INFO]: [CHAT] Block placed
+[16:34:04] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:05] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete_powder
+[16:34:05] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:05] [Client thread/INFO]: [CHAT] Block placed
+[16:34:05] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:06] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete_powder
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete_powder
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:06] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:06] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:07] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:07] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:07] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete_powder
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:pink_glazed_terracotta
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:08] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:08] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:09] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:09] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:09] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:10] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:10] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:11] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:11] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:12] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete
+[16:34:12] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete_powder
+[16:34:12] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:12] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:12] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete_powder
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:pink_glazed_terracotta
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:13] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:13] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:14] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:14] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:15] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:15] [Client thread/INFO]: [CHAT] Block placed
+[16:34:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:16] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:16] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -925.5]
+[16:34:16] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -925.5
+[16:34:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:16] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:16] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -926.5]
+[16:34:16] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -926.5
+[16:34:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:16] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:17] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -927.5]
+[16:34:17] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -927.5
+[16:34:17] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:17] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:17] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -928.5]
+[16:34:17] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -928.5
+[16:34:17] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:17] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:17] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -929.5]
+[16:34:17] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -929.5
+[16:34:17] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:17] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:18] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -930.5]
+[16:34:18] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -930.5
+[16:34:18] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:18] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:18] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -931.5]
+[16:34:18] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -931.5
+[16:34:18] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:18] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:19] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -932.5]
+[16:34:19] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -932.5
+[16:34:19] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:19] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:19] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -933.5]
+[16:34:19] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -933.5
+[16:34:19] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:19] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:20] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -934.5]
+[16:34:20] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -934.5
+[16:34:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:20] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:20] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -935.5]
+[16:34:20] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -935.5
+[16:34:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:20] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:20] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -936.5]
+[16:34:20] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -936.5
+[16:34:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:20] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:20] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -937.5]
+[16:34:21] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -937.5
+[16:34:21] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:21] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:21] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -938.5]
+[16:34:21] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -938.5
+[16:34:21] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:21] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:21] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -939.5]
+[16:34:21] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -939.5
+[16:34:21] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:21] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:21] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -940.5]
+[16:34:21] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -940.5
+[16:34:22] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:22] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:22] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -941.5]
+[16:34:22] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -941.5
+[16:34:22] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:22] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:22] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -942.5]
+[16:34:22] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -942.5
+[16:34:22] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:22] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:22] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -943.5]
+[16:34:22] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -943.5
+[16:34:22] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:23] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:23] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -944.5]
+[16:34:23] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -944.5
+[16:34:23] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:23] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:23] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -945.5]
+[16:34:23] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -945.5
+[16:34:23] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:23] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:23] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -946.5]
+[16:34:23] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -946.5
+[16:34:23] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:24] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:24] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -947.5]
+[16:34:24] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -947.5
+[16:34:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:24] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:24] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -948.5]
+[16:34:24] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -948.5
+[16:34:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:24] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:24] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -949.5]
+[16:34:24] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -949.5
+[16:34:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:25] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:25] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -950.5]
+[16:34:25] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -950.5
+[16:34:25] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:25] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:25] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 880.5, 4.0, -950.5]
+[16:34:25] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 880.5, 4.0, -950.5
+[16:34:25] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:25] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:25] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 879.5, 4.0, -950.5]
+[16:34:25] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 879.5, 4.0, -950.5
+[16:34:25] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:25] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:26] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 878.5, 4.0, -950.5]
+[16:34:26] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 878.5, 4.0, -950.5
+[16:34:26] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:26] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:26] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 877.5, 4.0, -950.5]
+[16:34:26] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 877.5, 4.0, -950.5
+[16:34:26] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:26] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:26] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 876.5, 4.0, -950.5]
+[16:34:26] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 876.5, 4.0, -950.5
+[16:34:26] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:26] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:27] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 875.5, 4.0, -950.5]
+[16:34:27] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 875.5, 4.0, -950.5
+[16:34:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:27] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:27] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 874.5, 4.0, -950.5]
+[16:34:27] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 874.5, 4.0, -950.5
+[16:34:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:27] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:27] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 873.5, 4.0, -950.5]
+[16:34:27] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 873.5, 4.0, -950.5
+[16:34:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:28] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:28] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 872.5, 4.0, -950.5]
+[16:34:28] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 872.5, 4.0, -950.5
+[16:34:28] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:28] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:28] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 871.5, 4.0, -950.5]
+[16:34:28] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 871.5, 4.0, -950.5
+[16:34:28] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:28] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:28] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 871.5, 4.0, -950.5]
+[16:34:28] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 871.5, 4.0, -950.5
+[16:34:28] [Client thread/INFO]: [STDOUT]: Pressed 17
+[16:34:28] [Client thread/INFO]: [STDOUT]: Released 17
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 871.5, 4.0, -950.5]
+[16:34:29] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 871.5, 4.0, -950.5
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Client thread/INFO]: [CHAT] The block couldn't be placed
+[16:34:29] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:lime_glazed_terracotta
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:29] [Client thread/INFO]: [CHAT] Block placed
+[16:34:29] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:30] [Client thread/INFO]: [CHAT] Block placed
+[16:34:30] [Client thread/INFO]: [CHAT] There is no such block with name minecraft:concrete_powder
+[16:34:30] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 4.0, -923.5]
+[16:34:30] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 4.0, -923.5
+[16:34:30] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 29.0, -924.5]
+[16:34:30] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 29.0, -924.5
+[16:34:30] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:30] [Client thread/INFO]: [CHAT] Block placed
+[16:34:30] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 881.5, 29.0, -909.5]
+[16:34:30] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 881.5, 29.0, -909.5
+[16:34:30] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:30] [Client thread/INFO]: [CHAT] Block placed
+[16:34:30] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 896.5, 29.0, -909.5]
+[16:34:30] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 896.5, 29.0, -909.5
+[16:34:30] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:30] [Client thread/INFO]: [CHAT] Block placed
+[16:34:30] [Server thread/INFO]: [MineDojoAgent0: Teleported MineDojoAgent0 to 896.5, 29.0, -924.5]
+[16:34:30] [Client thread/INFO]: [CHAT] Teleported MineDojoAgent0 to 896.5, 29.0, -924.5
+[16:34:30] [Server thread/INFO]: [MineDojoAgent0: Block placed]
+[16:34:30] [Client thread/INFO]: [CHAT] Block placed
+[16:34:30] [Client thread/INFO]: [STDOUT]: SM: [CLIENT_STATE_MACHINE] Mission ended for reason: null world still exists: true
+[16:34:30] [Client thread/INFO]: [STDOUT]: Unpausing
+[16:34:30] [Client thread/INFO]: [STDOUT]: CLIENT request state: IDLING
+[16:34:30] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_QUIT
+[16:34:30] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_QUIT
+[16:34:30] [Client thread/INFO]: [STDOUT]: CLIENT enter state: IDLING
+[16:34:30] [Client thread/INFO]: [STDOUT]: CLIENT request state: MISSION_ENDED
+[16:34:30] [Client thread/INFO]: [STDOUT]: CLIENT enter state: MISSION_ENDED
+[16:34:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5ms behind, skipping 0 tick(s)
+[16:34:30] [EnvServerSocketHandler/INFO]: [STDOUT]: Received from localhost:<MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0">
+    <Mission xmlns="http://ProjectMalmo.microsoft.com">
+        <About>
+            <Summary>MineDojoSim</Summary>
+        </About>
+
+        <ModSettings>
+            <MsPerTick>50</MsPerTick>
+        </ModSettings>
+
+        <ServerSection>
+            <ServerInitialConditions>
+                <!-- Initial Conditions -->
+
+                
+                <Time>
+                   
+                   <AllowPassageOfTime>false</AllowPassageOfTime>
+                </Time>
+
+                
+                <AllowSpawning>false</AllowSpawning>
+
+                
+
+            </ServerInitialConditions>
+            <ServerHandlers>
+
+                
+                <FlatWorldGenerator forceReset="true" generatorString=""/>
+
+                
+
+                
+
+                
+
+
+            </ServerHandlers>
+        </ServerSection>
+
+
+        
+        <AgentSection mode="Survival">
+            <Name>MineDojoAgent0</Name>
+
+            <AgentStart>
+
+                
+                <LowLevelInputs>true</LowLevelInputs>
+
+                
+                <BreakSpeedMultiplier>1.0</BreakSpeedMultiplier>
+
+                
+                <StartingHealth maxHealth="20" health="20.0"/>
+
+                
+                <StartingFood food="20"/>
+
+                
+
+            </AgentStart>
+            <AgentHandlers>
+                <!-- These area  bit of boilerplate that
+                 we always expect to be included ... -->
+                <FileBasedPerformanceProducer/>
+                <ObservationFromDamage/>
+                <PauseCommand/>
+
+                <!--  Observations     -->
+
+                
+                <VideoProducer want_depth="false">
+                <Width>512 </Width>
+                <Height>288</Height>
+            </VideoProducer>
+
+                
+                <ObservationFromFullInventory flat="false"/>
+
+                
+                <ObservationFromFullStats/>
+
+                
+
+                <!--  Monitors     -->
+
+                <!--  Actions   -->
+                <ChatCommands/>
+
+                
+                <CameraCommands/>
+
+                
+                <NearbySmeltCommands/>
+
+                
+                <SimpleCraftCommands/>
+
+                
+                <NearbyCraftCommands/>
+
+                
+                <HumanLevelCommands/>
+
+                
+                <EquipCommands/>
+
+                
+                <PlaceCommands/>
+
+                
+
+                <!--  Rewards   -->
+
+                <!-- Additional Agent Handlers like quitting -->
+                
+
+                <!-- Env Monitors? -->
+            </AgentHandlers>
+        </AgentSection>
+        
+    </Mission>
+    <ExperimentUID>
+        6bace166-b8be-442a-babc-b9ca0e499b42
+    </ExperimentUID>
+    <ClientRole>
+        0
+    </ClientRole>
+    <ClientAgentConnection>
+        <ClientIPAddress>127.0.0.1</ClientIPAddress>
+        <ClientMissionControlPort>0</ClientMissionControlPort>
+        <ClientCommandsPort>0</ClientCommandsPort>
+        <AgentIPAddress>127.0.0.1</AgentIPAddress>
+        <AgentMissionControlPort>0</AgentMissionControlPort>
+        <AgentVideoPort>0</AgentVideoPort>
+        <AgentDepthPort>0</AgentDepthPort>
+        <AgentLuminancePort>0</AgentLuminancePort>
+        <AgentObservationsPort>0</AgentObservationsPort>
+        <AgentRewardsPort>0</AgentRewardsPort>
+        <AgentColourMapPort>0</AgentColourMapPort>
+    </ClientAgentConnection>
+</MissionInit>
+[16:34:30] [Client thread/INFO]: [STDOUT]: inform the agent
+[16:34:31] [Client thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_MISSION_END
+[16:34:31] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_MISSION_END
+[16:34:31] [Server thread/INFO]: [STDOUT]: SERVER request state: CLEAN_UP
+[16:34:31] [Server thread/INFO]: [STDOUT]: SERVER enter state: CLEAN_UP
+[16:34:31] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
+[16:34:31] [Client thread/INFO]: [STDOUT]: CLIENT request state: DORMANT
+[16:34:31] [Client thread/INFO]: [STDOUT]: CLIENT enter state: DORMANT
+[16:34:31] [Client thread/INFO]: [STDOUT]: JETTISONING 0 COMMANDS
+[16:34:32] [EnvServerSocketHandler/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
+[16:34:32] [Client thread/INFO]: [STDOUT]: Mission received: MineDojoSim
+[16:34:32] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_HANDLERS
+[16:34:32] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_HANDLERS
+[16:34:32] [Client thread/INFO]: [STDOUT]: CLIENT request state: EVALUATING_WORLD_REQUIREMENTS
+[16:34:32] [Client thread/INFO]: [STDOUT]: CLIENT enter state: EVALUATING_WORLD_REQUIREMENTS
+[16:34:32] [Client thread/INFO]: [STDOUT]: CLIENT request state: PAUSING_OLD_SERVER
+[16:34:32] [Client thread/INFO]: [STDOUT]: CLIENT enter state: PAUSING_OLD_SERVER
+[16:34:32] [Server thread/INFO]: Saving and pausing game...
+[16:34:32] [Server thread/INFO]: Saving chunks for level 'TEMP_0_49498eb5-9afb-4406-9b09-4aefbeede834'/Overworld
+[16:34:32] [Server thread/INFO]: Saving chunks for level 'TEMP_0_49498eb5-9afb-4406-9b09-4aefbeede834'/Nether
+[16:34:32] [Server thread/INFO]: Saving chunks for level 'TEMP_0_49498eb5-9afb-4406-9b09-4aefbeede834'/The End
+[16:34:32] [Client thread/INFO]: [STDOUT]: CLIENT request state: CLOSING_OLD_SERVER
+[16:34:32] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CLOSING_OLD_SERVER
+[16:34:32] [Client thread/INFO]: [STDOUT]: Unpausing
+[16:34:33] [Server thread/INFO]: Stopping server
+[16:34:33] [Server thread/INFO]: Saving players
+[16:34:33] [Server thread/INFO]: MineDojoAgent0 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[16:34:33] [Server thread/INFO]: MineDojoAgent0 left the game
+[16:34:33] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[16:34:33] [Server thread/INFO]: Saving worlds
+[16:34:33] [Server thread/INFO]: Saving chunks for level 'TEMP_0_49498eb5-9afb-4406-9b09-4aefbeede834'/Overworld
+[16:34:33] [Server thread/INFO]: Saving chunks for level 'TEMP_0_49498eb5-9afb-4406-9b09-4aefbeede834'/Nether
+[16:34:33] [Server thread/INFO]: Saving chunks for level 'TEMP_0_49498eb5-9afb-4406-9b09-4aefbeede834'/The End
+[16:34:33] [Server thread/INFO]: [STDOUT]: Unpausing
+[16:34:33] [Server thread/INFO]: [STDOUT]: Unpausing
+[16:34:33] [Server thread/INFO]: [STDOUT]: Unpausing
+[16:34:33] [Server thread/INFO]: Unloading dimension 0
+[16:34:33] [Server thread/INFO]: Unloading dimension -1
+[16:34:33] [Server thread/INFO]: Unloading dimension 1
+[16:34:34] [Server thread/INFO]: Applying holder lookups
+[16:34:34] [Server thread/INFO]: Holder lookups applied
+[16:34:44] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_NEW_WORLD
+[16:34:44] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_NEW_WORLD
+[16:34:46] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[16:34:46] [Server thread/INFO]: Generating keypair
+[16:34:46] [Server thread/INFO]: Injecting existing block and item data into this server instance
+[16:34:46] [Server thread/INFO]: Applying holder lookups
+[16:34:46] [Server thread/INFO]: Holder lookups applied
+[16:34:46] [Server thread/INFO]: Loading dimension 0 (TEMP_0_91a1a725-26d3-4bd5-a864-6a38212826d6) (net.minecraft.server.integrated.IntegratedServer@f1029fc)
+[16:34:46] [Server thread/INFO]: Loading dimension 1 (TEMP_0_91a1a725-26d3-4bd5-a864-6a38212826d6) (net.minecraft.server.integrated.IntegratedServer@f1029fc)
+[16:34:46] [Server thread/INFO]: Loading dimension -1 (TEMP_0_91a1a725-26d3-4bd5-a864-6a38212826d6) (net.minecraft.server.integrated.IntegratedServer@f1029fc)
+[16:34:46] [Server thread/INFO]: Preparing start region for level 0
+[16:34:47] [Server thread/INFO]: Changing view distance to 4, from 10
+[16:34:47] [Netty Local Client IO #1/INFO]: Server protocol version 2
+[16:34:47] [Netty Server IO #3/INFO]: Client protocol version 2
+[16:34:47] [Client thread/INFO]: Deleting level TEMP_0_49498eb5-9afb-4406-9b09-4aefbeede834
+[16:34:47] [Client thread/INFO]: Attempt 1...
+[16:34:47] [Netty Server IO #3/INFO]: Client attempting to join with 5 mods : minecraft@1.11.2,FML@8.0.99.99,malmomod@0.37.0,forge@13.20.1.2588,mcp@9.19
+[16:34:47] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_MOD_READY
+[16:34:47] [Netty Local Client IO #1/INFO]: [Netty Local Client IO #1] Client side modded connection established
+[16:34:47] [Server thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_READY
+[16:34:47] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_READY
+[16:34:47] [Server thread/INFO]: [Server thread] Server side modded connection established
+[16:34:47] [Server thread/INFO]: MineDojoAgent0[local:E:8b69964f] logged in with entity id 125 at (-1357.5, 4.0, 967.5)
+[16:34:47] [Server thread/INFO]: MineDojoAgent0 joined the game
+[16:34:47] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_MOD_READY
+[16:34:47] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
+[16:34:47] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
+[16:34:47] [Server thread/INFO]: [STDOUT]: INCOMING MISSION: Received MissionInit directly through ServerStateMachine constructor.
+[16:34:47] [Server thread/INFO]: [STDOUT]: Mission received: MineDojoSim
+[16:34:47] [Server thread/INFO]: Received mission: §9MineDojoSim
+[16:34:47] [Server thread/INFO]: Source: §alocalhost
+[16:34:47] [Server thread/INFO]: [STDOUT]: SERVER request state: BUILDING_WORLD
+[16:34:47] [Server thread/INFO]: [STDOUT]: SERVER enter state: BUILDING_WORLD
+[16:34:47] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[16:34:47] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[16:34:47] [Server thread/INFO]: [STDOUT]: Experiment requires: 
+[16:34:47] [Server thread/INFO]: [STDOUT]: >>>> MineDojoAgent0
+[16:34:49] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - MineDojoAgent0
+[16:34:49] [Server thread/INFO]: [STDOUT]: Initializing player with username MineDojoAgent0 and agentname MineDojoAgent0
+[16:34:49] [Client thread/INFO]: [CHAT] Received mission: §9MineDojoSim
+[16:34:49] [Client thread/INFO]: [CHAT] Source: §alocalhost
+[16:34:49] [Client thread/INFO]: [STDOUT]: CLIENT request state: RUNNING
+[16:34:49] [Client thread/INFO]: [STDOUT]: CLIENT enter state: RUNNING
+[16:34:49] [Client thread/INFO]: [STDOUT]: Unpausing
+[16:34:49] [Server thread/INFO]: [STDOUT]: SERVER request state: RUNNING
+[16:34:49] [Server thread/INFO]: [STDOUT]: SERVER enter state: RUNNING
+[16:34:50] [Server thread/INFO]: [STDOUT]: Warning: managed 4/20 ticks this second.

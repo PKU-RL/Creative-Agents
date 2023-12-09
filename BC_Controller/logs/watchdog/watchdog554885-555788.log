@@ -1,0 +1,2 @@
+2023-12-08 16:34:58 ps watchdog[555957] INFO Watchdog started between parent 554885 and child 555788
+2023-12-08 16:36:11 ps watchdog[555957] INFO Child is not running anymore, launcher can terminate.
