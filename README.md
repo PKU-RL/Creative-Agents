@@ -24,7 +24,7 @@ MineDojo works with ```Ubuntu>=18.04```, ```Python>=3.9``` and ```Java jdk 1.8.0
 ### Install Packages and Environments
 
 #### Install MineDojo
-You can install the MineDojo environment following the [official document](https://docs.minedojo.org/sections/getting_started/install.html#prerequisites). 
+You can download the MineDojo environment for Creative Agents Here: [Modified MineDojo Environment](https://zenodo.org/records/10321659)
 
 #### Install Voyager
 Please follow [Voyager Install Tutorial](https://github.com/MineDojo/Voyager). Note that you should accomplish all the four parts:
@@ -36,7 +36,9 @@ Please follow [Voyager Install Tutorial](https://github.com/MineDojo/Voyager). N
 
 #### Install Dependencies for BC Controller
 
-</font> <font color=Red> TODO: Install Dependencies for BC Controller </font> <font color=Black>
+```bash
+pip install -r ./BC_Controller/requirements.txt
+```
 
 ### Get Started
 
@@ -59,7 +61,32 @@ python diffusion_gpt4.py --api_key <API_KEY> --image_path <IMAGE_PATH> --mc_port
 
 To test with Diffusion+BC, run:
 
-</font> <font color=Red> TODO: how to run Diffusion+BC </font> <font color=Black>
+```
+python ./BC_Controller/BC_pipline.py
+```
+
+
+Diffusion+BC results(images, voxels, voxel sequence and building result) will be saved in ```./BC_Controller/results```.
+
+
+To type your prompts for building, modify ```./BC_Controller/results/validation_prompt.txt```.
+
+To train image generation part in Diffusion+BC, run:
+```
+python ./BC_Controller/txt2img/train_text_to_image_lora.py
+```
+
+To train voxel generation part in Diffusion+BC, run:
+```
+python ./BC_Controller/img2vox/runner.py
+```
+
+To train sequence part in Diffusion+BC, run:
+```
+python ./BC_Controller/vox2seq/train.py
+```
+
+
 
 ## Showcases and Demonstrations
 
