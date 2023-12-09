@@ -76,7 +76,7 @@ To test with Diffusion+BC, run:
 ## Citation
 If you find our benchmark meaningful and useful, please consider citing us!
 ```bibtex
-@article{zhang2023creative
+@article{zhang2023creative,
       title={Creative Agents: Empowering Agents with Imagination for Creative Tasks},
       author={Zhang, Chi and Cai, Penglin and Fu, Yuhui and Yuan, Haoqi and Lu, Zongqing},
       journal={arXiv preprint arXiv:2312.02519},
