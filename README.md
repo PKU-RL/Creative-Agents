@@ -41,7 +41,7 @@ git clone https://github.com/PKU-RL/Creative-Agents
 ```
 
 
-#### Install Dependencies and Download Models, Datasets(for training) for BC Controller
+#### Install Dependencies and Download Models, Datasets (for training) for BC Controller
 
 To install packages for BC Controller, run:
 ```bash
@@ -75,7 +75,7 @@ python ./BC_Controller/BC_pipline.py
 ```
 
 
-Diffusion+BC results(images, voxels, voxel sequence and building result) will be saved in ```./BC_Controller/results```.
+Diffusion+BC results (images, voxels, voxel sequence and building result) will be saved in ```./BC_Controller/results```.
 
 
 To type your prompts for building, modify ```./BC_Controller/results/validation_prompt.txt```.
