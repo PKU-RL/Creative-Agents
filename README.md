@@ -48,7 +48,7 @@ To install packages for BC Controller, run:
 pip install -r ./BC_Controller/requirements.txt
 ```
 
-After downloading our models and datasets, for spilted files, run:
+After downloading our models and datasets, for split files, run:
 ```bash
 cat NAME.zip.* > NAME.zip
 ```
